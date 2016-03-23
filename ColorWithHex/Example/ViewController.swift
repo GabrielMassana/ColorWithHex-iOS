@@ -15,29 +15,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     
-        let viewOne: UIView = UIView(frame: CGRect.init(x: 0, y: 20, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        let buttonOne: UIButton = UIButton(frame: CGRect.init(x: 0, y: 20, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        buttonOne.setTitle("Short Hex: f80 (ff8800)", forState: .Normal)
         
-        view.addSubview(viewOne)
+        view.addSubview(buttonOne)
         
-        let viewTwo: UIView = UIView(frame: CGRect.init(x: 0, y: 140, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        let buttonTwo: UIButton = UIButton(frame: CGRect.init(x: 0, y: 140, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        buttonTwo.setTitle("Hex with Alpha: ff8800ff", forState: .Normal)
         
-        view.addSubview(viewTwo)
+        view.addSubview(buttonTwo)
         
-        let viewThree: UIView = UIView(frame: CGRect.init(x: 0, y: 260, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        let buttonThree: UIButton = UIButton(frame: CGRect.init(x: 0, y: 260, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        buttonThree.setTitle("Hex with #: #20aa45", forState: .Normal)
         
-        view.addSubview(viewThree)
+        view.addSubview(buttonThree)
         
-        let viewFour: UIView = UIView(frame: CGRect.init(x: 0, y: 380, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        let buttonFour: UIButton = UIButton(frame: CGRect.init(x: 0, y: 380, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
+        buttonFour.setTitle("Hex with # and Alpha: #20aa4580", forState: .Normal)
         
-        view.addSubview(viewFour)
+        view.addSubview(buttonFour)
         
-        viewOne.backgroundColor = UIColor.colorWithHex("f0aa45")
-        viewTwo.backgroundColor = UIColor.colorWithHexAlpha("f0aa45ff")
-        viewThree.backgroundColor = UIColor.colorWithHex("#f0aa45")
-        viewFour.backgroundColor = UIColor.colorWithHexAlpha("#f0aa45ff")
+        buttonOne.backgroundColor = UIColor.colorWithHex("f80")
+        buttonTwo.backgroundColor = UIColor.colorWithHex("ff8800ff")
+        buttonThree.backgroundColor = UIColor.colorWithHex("#20aa45")
+        buttonFour.backgroundColor = UIColor.colorWithHex("#20aa4580")
     }
-
-
-
 }
 
