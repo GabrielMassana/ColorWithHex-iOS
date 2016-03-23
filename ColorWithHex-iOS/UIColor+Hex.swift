@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     /**
      Creates UIColor object based on given hexadecimal color value (rrggbb).
@@ -17,7 +17,7 @@ extension UIColor {
      
      - returns: A UIColor from the given String.
     */
-    class func colorWithHex(hex: String) -> UIColor? {
+    public class func colorWithHex(hex: String) -> UIColor? {
         
         let red: CGFloat
         let green: CGFloat
@@ -55,7 +55,7 @@ extension UIColor {
      
      - returns: A UIColor from the given String.
     */
-    class func colorWithHexAlpha(hex: String) -> UIColor? {
+    public class func colorWithHexAlpha(hex: String) -> UIColor? {
         
         let red: CGFloat
         let green: CGFloat
