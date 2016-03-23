@@ -5,15 +5,17 @@
 //  Created by GabrielMassana on 18/03/2016.
 //  Copyright © 2016 GabrielMassana. All rights reserved.
 //
+//  Credit: https://www.hackingwithswift.com/example-code/uicolor/how-to-convert-a-hex-color-to-a-uicolor
+// 
 
 import UIKit
 
 public extension UIColor {
     
     /**
-     Creates UIColor object based on given hexadecimal color value (rrggbb).
+     Creates UIColor object based on given hexadecimal color value (rrggbb) or (#rrggbb).
      
-     - parameter hex: String with the hex information.
+     - parameter hex: String with the hex information. With or without hash symbol.
      
      - returns: A UIColor from the given String.
     */
@@ -49,9 +51,9 @@ public extension UIColor {
     }
     
     /**
-     Creates UIColor object based on given hexadecimal color value (rrggbbaa).
+     Creates UIColor object based on given hexadecimal color value with alpha (rrggbbaa) or (#rrggbbaa).
      
-     - parameter hex: String with the hex information.
+     - parameter hex: String with the hex information. With or without hash symbol.
      
      - returns: A UIColor from the given String.
     */
