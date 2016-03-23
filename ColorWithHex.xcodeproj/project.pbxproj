@@ -88,8 +88,8 @@
 		C015B06F1CA29A6D00C97E16 /* ColorWithHex */ = {
 			isa = PBXGroup;
 			children = (
-				C0039A961CA2DB3900437BBC /* Example */,
 				C015B0931CA2A11900C97E16 /* ColorWithHex-iOS */,
+				C0039A961CA2DB3900437BBC /* Example */,
 				C015B0741CA29A6D00C97E16 /* Main.storyboard */,
 				C015B0771CA29A6D00C97E16 /* Assets.xcassets */,
 				C015B0791CA29A6D00C97E16 /* LaunchScreen.storyboard */,
