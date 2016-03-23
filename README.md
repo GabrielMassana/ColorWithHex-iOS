@@ -39,6 +39,16 @@ $ pod install
 
 Drag into your project the folder `/ColorWithHex-iOS`. That's all.
 
+## Example Swift
+
+```swift
+        let shortHexHash: UIColor = UIColor.colorWithHex("#f80")
+        let shortHex: UIColor  = UIColor.colorWithHex("f80")
+        let hex: UIColor  = UIColor.colorWithHex("ff8800")
+        let hexAlpha: UIColor  = UIColor.colorWithHex("ff880080")
+        let hexHash: UIColor  = UIColor.colorWithHex("#20aa45")
+        let hexHashAlpha: UIColor  = UIColor.colorWithHex("#20aa4580")
+```
 ## Example Objective-C
 
 ```objc
@@ -46,14 +56,13 @@ Drag into your project the folder `/ColorWithHex-iOS`. That's all.
 
 ...
 
-        shortHexHash.backgroundColor = UIColor.colorWithHex("#f80")
-        shortHex.backgroundColor = UIColor.colorWithHex("f80")
-        hex.backgroundColor = UIColor.colorWithHex("ff8800")
-        hexAlpha.backgroundColor = UIColor.colorWithHex("ff880080")
-        hexHash.backgroundColor = UIColor.colorWithHex("#20aa45")
-        hexHashAlpha.backgroundColor = UIColor.colorWithHex("#20aa4580")
+        UIColor *shortHexHash = [UIColor colorWithHex: @"#f80"];
+        UIColor *shortHex = [UIColor colorWithHex: @"f80"];
+        UIColor *hex = [UIColor colorWithHex: @"ff8800"];
+        UIColor *hexAlpha = [UIColor colorWithHex: @"ff880080"];
+        UIColor *hexAlpha = [UIColor colorWithHex: @"#20aa45"];
+        UIColor *hexHash = [UIColor colorWithHex: @"#20aa4580"];
 ```
-
 ## License
 
 ColorWithHex-iOS is released under the MIT license. Please see the file called LICENSE.
