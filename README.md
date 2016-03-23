@@ -11,12 +11,12 @@
 Swift Extension to convert hexadecimal values into UIColor Objects.
 
 Hex formats allowed:
-- Short Hex: rgb
-- Hash + Short Hex: #rgb
-- Hex: rrggbb
-- Hash + Hex: #rrggbb
-- Hex + Alpha: rrggbbaa
-- Hash + Hex + Alpha: #rrggbbaa
+- Short Hex: **rgb**
+- Hash + Short Hex: **#rgb**
+- Hex: **rrggbb**
+- Hash + Hex: **#rrggbb**
+- Hex + Alpha: **rrggbbaa**
+- Hash + Hex + Alpha: **#rrggbbaa**
 
 ## Installation
 
