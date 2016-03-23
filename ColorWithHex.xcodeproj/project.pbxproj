@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		C0039A991CA2DB3900437BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0039A971CA2DB3900437BBC /* AppDelegate.swift */; };
 		C0039A9A1CA2DB3900437BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0039A981CA2DB3900437BBC /* ViewController.swift */; };
+		C0039AB01CA2E9FD00437BBC /* ColorWithHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0039AAF1CA2E9FD00437BBC /* ColorWithHexTests.swift */; };
 		C015B0761CA29A6D00C97E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C015B0741CA29A6D00C97E16 /* Main.storyboard */; };
 		C015B0781CA29A6D00C97E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C015B0771CA29A6D00C97E16 /* Assets.xcassets */; };
 		C015B07B1CA29A6D00C97E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C015B0791CA29A6D00C97E16 /* LaunchScreen.storyboard */; };
-		C015B0861CA29A6D00C97E16 /* ColorWithHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015B0851CA29A6D00C97E16 /* ColorWithHexTests.swift */; };
 		C015B0951CA2A11900C97E16 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C015B0941CA2A11900C97E16 /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C015B0821CA29A6D00C97E16 /* PBXContainerItemProxy */ = {
+		C0039AB21CA2E9FD00437BBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C015B0651CA29A6D00C97E16 /* Project object */;
 			proxyType = 1;
@@ -29,26 +29,26 @@
 /* Begin PBXFileReference section */
 		C0039A971CA2DB3900437BBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0039A981CA2DB3900437BBC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0039AAD1CA2E9FD00437BBC /* ColorWithHexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWithHexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0039AAF1CA2E9FD00437BBC /* ColorWithHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexTests.swift; sourceTree = "<group>"; };
+		C0039AB11CA2E9FD00437BBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C015B06D1CA29A6D00C97E16 /* ColorWithHex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWithHex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C015B0751CA29A6D00C97E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C015B0771CA29A6D00C97E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C015B07A1CA29A6D00C97E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C015B07C1CA29A6D00C97E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C015B0811CA29A6D00C97E16 /* ColorWithHexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWithHexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C015B0851CA29A6D00C97E16 /* ColorWithHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexTests.swift; sourceTree = "<group>"; };
-		C015B0871CA29A6D00C97E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C015B0941CA2A11900C97E16 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C015B06A1CA29A6D00C97E16 /* Frameworks */ = {
+		C0039AAA1CA2E9FD00437BBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C015B07E1CA29A6D00C97E16 /* Frameworks */ = {
+		C015B06A1CA29A6D00C97E16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,11 +67,20 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		C0039AAE1CA2E9FD00437BBC /* ColorWithHexTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0039AAF1CA2E9FD00437BBC /* ColorWithHexTests.swift */,
+				C0039AB11CA2E9FD00437BBC /* Info.plist */,
+			);
+			path = ColorWithHexTests;
+			sourceTree = "<group>";
+		};
 		C015B0641CA29A6D00C97E16 = {
 			isa = PBXGroup;
 			children = (
 				C015B06F1CA29A6D00C97E16 /* ColorWithHex */,
-				C015B0841CA29A6D00C97E16 /* ColorWithHexTests */,
+				C0039AAE1CA2E9FD00437BBC /* ColorWithHexTests */,
 				C015B06E1CA29A6D00C97E16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C015B06D1CA29A6D00C97E16 /* ColorWithHex.app */,
-				C015B0811CA29A6D00C97E16 /* ColorWithHexTests.xctest */,
+				C0039AAD1CA2E9FD00437BBC /* ColorWithHexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,15 +107,6 @@
 			path = ColorWithHex;
 			sourceTree = "<group>";
 		};
-		C015B0841CA29A6D00C97E16 /* ColorWithHexTests */ = {
-			isa = PBXGroup;
-			children = (
-				C015B0851CA29A6D00C97E16 /* ColorWithHexTests.swift */,
-				C015B0871CA29A6D00C97E16 /* Info.plist */,
-			);
-			path = ColorWithHexTests;
-			sourceTree = "<group>";
-		};
 		C015B0931CA2A11900C97E16 /* ColorWithHex-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +118,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C0039AAC1CA2E9FD00437BBC /* ColorWithHexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0039AB41CA2E9FD00437BBC /* Build configuration list for PBXNativeTarget "ColorWithHexTests" */;
+			buildPhases = (
+				C0039AA91CA2E9FD00437BBC /* Sources */,
+				C0039AAA1CA2E9FD00437BBC /* Frameworks */,
+				C0039AAB1CA2E9FD00437BBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0039AB31CA2E9FD00437BBC /* PBXTargetDependency */,
+			);
+			name = ColorWithHexTests;
+			productName = ColorWithHexTests;
+			productReference = C0039AAD1CA2E9FD00437BBC /* ColorWithHexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C015B06C1CA29A6D00C97E16 /* ColorWithHex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C015B08A1CA29A6D00C97E16 /* Build configuration list for PBXNativeTarget "ColorWithHex" */;
@@ -135,24 +153,6 @@
 			productReference = C015B06D1CA29A6D00C97E16 /* ColorWithHex.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C015B0801CA29A6D00C97E16 /* ColorWithHexTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C015B08D1CA29A6D00C97E16 /* Build configuration list for PBXNativeTarget "ColorWithHexTests" */;
-			buildPhases = (
-				C015B07D1CA29A6D00C97E16 /* Sources */,
-				C015B07E1CA29A6D00C97E16 /* Frameworks */,
-				C015B07F1CA29A6D00C97E16 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C015B0831CA29A6D00C97E16 /* PBXTargetDependency */,
-			);
-			name = ColorWithHexTests;
-			productName = ColorWithHexTests;
-			productReference = C015B0811CA29A6D00C97E16 /* ColorWithHexTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,12 +163,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = GabrielMassana;
 				TargetAttributes = {
-					C015B06C1CA29A6D00C97E16 = {
-						CreatedOnToolsVersion = 7.2;
-					};
-					C015B0801CA29A6D00C97E16 = {
+					C0039AAC1CA2E9FD00437BBC = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = C015B06C1CA29A6D00C97E16;
+					};
+					C015B06C1CA29A6D00C97E16 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -186,12 +186,19 @@
 			projectRoot = "";
 			targets = (
 				C015B06C1CA29A6D00C97E16 /* ColorWithHex */,
-				C015B0801CA29A6D00C97E16 /* ColorWithHexTests */,
+				C0039AAC1CA2E9FD00437BBC /* ColorWithHexTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C0039AAB1CA2E9FD00437BBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C015B06B1CA29A6D00C97E16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,16 +209,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C015B07F1CA29A6D00C97E16 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C0039AA91CA2E9FD00437BBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0039AB01CA2E9FD00437BBC /* ColorWithHexTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C015B0691CA29A6D00C97E16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,21 +230,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C015B07D1CA29A6D00C97E16 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C015B0861CA29A6D00C97E16 /* ColorWithHexTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C015B0831CA29A6D00C97E16 /* PBXTargetDependency */ = {
+		C0039AB31CA2E9FD00437BBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C015B06C1CA29A6D00C97E16 /* ColorWithHex */;
-			targetProxy = C015B0821CA29A6D00C97E16 /* PBXContainerItemProxy */;
+			targetProxy = C0039AB21CA2E9FD00437BBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -260,6 +260,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C0039AB51CA2E9FD00437BBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorWithHexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHexTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHex.app/ColorWithHex";
+			};
+			name = Debug;
+		};
+		C0039AB61CA2E9FD00437BBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColorWithHexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHexTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHex.app/ColorWithHex";
+			};
+			name = Release;
+		};
 		C015B0881CA29A6D00C97E16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,33 +387,17 @@
 			};
 			name = Release;
 		};
-		C015B08E1CA29A6D00C97E16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ColorWithHexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHexTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHex.app/ColorWithHex";
-			};
-			name = Debug;
-		};
-		C015B08F1CA29A6D00C97E16 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = ColorWithHexTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ColorWithHexTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWithHex.app/ColorWithHex";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C0039AB41CA2E9FD00437BBC /* Build configuration list for PBXNativeTarget "ColorWithHexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0039AB51CA2E9FD00437BBC /* Debug */,
+				C0039AB61CA2E9FD00437BBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C015B0681CA29A6D00C97E16 /* Build configuration list for PBXProject "ColorWithHex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -404,15 +412,6 @@
 			buildConfigurations = (
 				C015B08B1CA29A6D00C97E16 /* Debug */,
 				C015B08C1CA29A6D00C97E16 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C015B08D1CA29A6D00C97E16 /* Build configuration list for PBXNativeTarget "ColorWithHexTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C015B08E1CA29A6D00C97E16 /* Debug */,
-				C015B08F1CA29A6D00C97E16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

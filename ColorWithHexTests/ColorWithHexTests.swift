@@ -7,30 +7,48 @@
 //
 
 import XCTest
-@testable import ColorWithHex
+
+//@testable import ColorWithHex
 
 class ColorWithHexTests: XCTestCase {
     
+    //MARK: - Accessors
+    
+    let shortHexHash: String?
+    let shortHex: String?
+    let hex: String?
+    let hexAlpha: String?
+    let hexHash: String?
+    let hexHashAlpha: String?
+    
+    
     override func setUp() {
+        
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let shortHexHash = "#f80"
+        let shortHex  = "f80"
+        let hex  = "ff8800"
+        let hexAlpha  = "ff880080"
+        let hexHash  = "#20aa45"
+        let hexHashAlpha  = "#20aa4580"
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        let shortHexHash = nil
+        let shortHex  = nil
+        let hex  = nil
+        let hexAlpha  = nil
+        let hexHash  = nil
+        let hexHashAlpha  = nil
+        
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func test_colorWithHex_newObjectReturned_shortHexHash() {
+        
+        let shortHexHash: UIColor = UIColor.colorWithHex(shortHexHash)
     }
     
 }
