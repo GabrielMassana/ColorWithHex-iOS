@@ -51,7 +51,7 @@ public extension UIColor {
     /**
      Creates UIColor object based on given hexadecimal color value with alpha (rrggbbaa).
      
-     - parameter hex: String with the hex information.
+     - parameter hexColor: String with the hex information.
      
      - returns: A UIColor from the given String.
      */
@@ -86,7 +86,7 @@ public extension UIColor {
     /**
      Creates UIColor object based on given hexadecimal color value without alpha (rrggbb) by adding alpha 1.0 to the given hex color.
      
-     - parameter hex: String with the hex information.
+     - parameter hexColor: String with the hex information.
      
      - returns: A UIColor from the given String.
      */
@@ -98,7 +98,7 @@ public extension UIColor {
     /**
      Creates UIColor object based on given short hexadecimal color value without alpha (rgb). Alpha will be 1.0.
      
-     - parameter hex: String with the hex information.
+     - parameter hexColor: String with the hex information.
      
      - returns: A UIColor from the given String.
      */
