@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ColorWithHex"
-  s.version      = "0.0.0"
+  s.version      = "0.0.2"
   s.summary      = "Swift Extension to convert hexadecimal values into UIColor Objects."
 
   s.homepage     = "https://github.com/GabrielMassana"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GabrielMassana/ColorWithHex-iOS.git", :tag => s.version, :branch => "master"}
   
-  s.source_files  = "ColorWithHex-iOS/**/*.{h,m}"
+  s.source_files  = "ColorWithHex-iOS/**/*.swift"
 
   s.requires_arc = true
 
