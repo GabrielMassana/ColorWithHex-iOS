@@ -81,4 +81,4 @@ Gabriel Massana
 
 ##Found an issue?
 
-Please open a [new Issue here](https://github.com/GabrielMassana/ColorWithHex-iOS/issues/new) if you run into a problem specific to ButtonBackgroundColor-iOS, have a feature request, or want to share a comment.
+Please open a [new Issue here](https://github.com/GabrielMassana/ColorWithHex-iOS/issues/new) if you run into a problem specific to ColorWithHex-iOS, have a feature request, or want to share a comment.
