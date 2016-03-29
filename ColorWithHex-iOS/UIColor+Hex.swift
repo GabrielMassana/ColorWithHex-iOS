@@ -21,6 +21,7 @@ public extension UIColor {
      
      - returns: A UIColor from the given String.
     */
+    @objc(hex_colorWithHex:)
     public class func colorWithHex(hex: String) -> UIColor? {
         
         var color:UIColor? = nil
