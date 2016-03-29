@@ -1,13 +1,18 @@
-####1.0.0
+#### 1.1.0
 
-- Converts a hexadecimal value (rgb) in a UIColor Object
-- Converts a hexadecimal value (#rgb) in a UIColor Object
-- Converts a hexadecimal value (rrggbb) in a UIColor Object
-- Converts a hexadecimal value (rrggbbaa) in a UIColor Object
-- Converts a hexadecimal value (#rrggbb) in a UIColor Object
-- Converts a hexadecimal value (#rrggbbaa) into a UIColor Object
-
+ - Added method with prefix for Objective-C
+ 
 ####1.0.4
 
-- Added Tests
+  - Added Tests
+
+#### 1.0.0
+
+  - Converts a hexadecimal value (rgb) in a UIColor Object
+  - Converts a hexadecimal value (#rgb) in a UIColor Object
+  - Converts a hexadecimal value (rrggbb) in a UIColor Object
+  - Converts a hexadecimal value (rrggbbaa) in a UIColor Object
+  - Converts a hexadecimal value (#rrggbb) in a UIColor Object
+  - Converts a hexadecimal value (#rrggbbaa) into a UIColor Object
+
 
