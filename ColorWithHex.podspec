@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ColorWithHex"
-  s.version      = "1.0.4"
+  s.version      = "1.1.0"
   s.summary      = "Swift Extension to convert hexadecimal values into UIColor Objects."
 
   s.homepage     = "https://github.com/GabrielMassana"
