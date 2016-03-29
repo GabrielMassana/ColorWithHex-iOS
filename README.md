@@ -56,12 +56,12 @@ Drag into your project the folder `/ColorWithHex-iOS`. That's all.
 
 ...
 
-        UIColor *shortHexHash = [UIColor colorWithHex: @"#f80"];
-        UIColor *shortHex = [UIColor colorWithHex: @"f80"];
-        UIColor *hex = [UIColor colorWithHex: @"ff8800"];
-        UIColor *hexAlpha = [UIColor colorWithHex: @"ff880080"];
-        UIColor *hexAlpha = [UIColor colorWithHex: @"#20aa45"];
-        UIColor *hexHash = [UIColor colorWithHex: @"#20aa4580"];
+        UIColor *shortHexHash = [UIColor hex_colorWithHex: @"#f80"];
+        UIColor *shortHex = [UIColor hex_colorWithHex: @"f80"];
+        UIColor *hex = [UIColor hex_colorWithHex: @"ff8800"];
+        UIColor *hexAlpha = [UIColor hex_colorWithHex: @"ff880080"];
+        UIColor *hexAlpha = [UIColor hex_colorWithHex: @"#20aa45"];
+        UIColor *hexHash = [UIColor hex_colorWithHex: @"#20aa4580"];
 ```
 ## License
 
