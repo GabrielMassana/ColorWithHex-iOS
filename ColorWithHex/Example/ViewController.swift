@@ -14,33 +14,33 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
     
-        let buttonShortHexHash: UIButton = UIButton(frame: CGRect.init(x: 0, y: 20, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonShortHexHash.setTitle("Short Hex with #: #f80 (ff8800)", forState: .Normal)
+        let buttonShortHexHash: UIButton = UIButton(frame: CGRect.init(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 100))
+        buttonShortHexHash.setTitle("Short Hex with #: #f80 (ff8800)", for: UIControlState())
         
         view.addSubview(buttonShortHexHash)
         
-        let buttonShortHex: UIButton = UIButton(frame: CGRect.init(x: 0, y: 140, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonShortHex.setTitle("Short Hex: f80 (ff8800)", forState: .Normal)
+        let buttonShortHex: UIButton = UIButton(frame: CGRect.init(x: 0, y: 140, width: UIScreen.main.bounds.width, height: 100))
+        buttonShortHex.setTitle("Short Hex: f80 (ff8800)", for: UIControlState())
         
         view.addSubview(buttonShortHex)
         
-        let buttonHex: UIButton = UIButton(frame: CGRect.init(x: 0, y: 260, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonHex.setTitle("Hex: ff8800", forState: .Normal)
+        let buttonHex: UIButton = UIButton(frame: CGRect.init(x: 0, y: 260, width: UIScreen.main.bounds.width, height: 100))
+        buttonHex.setTitle("Hex: ff8800", for: UIControlState())
         
         view.addSubview(buttonHex)
         
-        let buttonHexAlpha: UIButton = UIButton(frame: CGRect.init(x: 0, y: 380, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonHexAlpha.setTitle("Hex with Alpha: ff880080", forState: .Normal)
+        let buttonHexAlpha: UIButton = UIButton(frame: CGRect.init(x: 0, y: 380, width: UIScreen.main.bounds.width, height: 100))
+        buttonHexAlpha.setTitle("Hex with Alpha: ff880080", for: UIControlState())
         
         view.addSubview(buttonHexAlpha)
         
-        let buttonHexHash: UIButton = UIButton(frame: CGRect.init(x: 0, y: 500, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonHexHash.setTitle("Hex with #: #20aa45", forState: .Normal)
+        let buttonHexHash: UIButton = UIButton(frame: CGRect.init(x: 0, y: 500, width: UIScreen.main.bounds.width, height: 100))
+        buttonHexHash.setTitle("Hex with #: #20aa45", for: UIControlState())
         
         view.addSubview(buttonHexHash)
         
-        let buttonHexHashAlpha: UIButton = UIButton(frame: CGRect.init(x: 0, y: 620, width: CGRectGetWidth(UIScreen.mainScreen().bounds), height: 100))
-        buttonHexHashAlpha.setTitle("Hex with # and Alpha: #20aa4580", forState: .Normal)
+        let buttonHexHashAlpha: UIButton = UIButton(frame: CGRect.init(x: 0, y: 620, width: UIScreen.main.bounds.width, height: 100))
+        buttonHexHashAlpha.setTitle("Hex with # and Alpha: #20aa4580", for: UIControlState())
         
         view.addSubview(buttonHexHashAlpha)
         

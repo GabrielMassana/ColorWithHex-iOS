@@ -22,14 +22,14 @@ public extension UIColor {
      - returns: A UIColor from the given String.
     */
     @objc(cwh_colorWithHex:)
-    public class func colorWithHex(hex: String) -> UIColor? {
+    public class func colorWithHex(_ hex: String) -> UIColor? {
         
         var color:UIColor? = nil
         
-        let noHash = hex.stringByReplacingOccurrencesOfString("#", withString: "")
+        let noHash = hex.replacingOccurrences(of: "#", with: "")
         
         let start = noHash.startIndex
-        let hexColor = noHash.substringFromIndex(start)
+        let hexColor = noHash.substring(from: start)
         
         if (hexColor.characters.count == 8) {
             
@@ -56,7 +56,7 @@ public extension UIColor {
      
      - returns: A UIColor from the given String.
      */
-    private class func colorWithHexAlpha(hexColor: String) -> UIColor? {
+    fileprivate class func colorWithHexAlpha(_ hexColor: String) -> UIColor? {
         
         let red: CGFloat
         let green: CGFloat
@@ -67,10 +67,10 @@ public extension UIColor {
         
         if hexColor.characters.count == 8 {
             
-            let scanner = NSScanner(string: hexColor)
+            let scanner = Scanner(string: hexColor)
             var hexNumber: UInt64 = 0
             
-            if scanner.scanHexLongLong(&hexNumber) {
+            if scanner.scanHexInt64(&hexNumber) {
                 
                 red = CGFloat((hexNumber & 0xff000000) >> 24) / 255
                 green = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
@@ -91,7 +91,7 @@ public extension UIColor {
      
      - returns: A UIColor from the given String.
      */
-    private class func colorWithHexSixCharacters(hexColor: String) -> UIColor? {
+    fileprivate class func colorWithHexSixCharacters(_ hexColor: String) -> UIColor? {
         
         return colorWithHexAlpha(String(format: "%@ff", hexColor))
     }
@@ -103,16 +103,16 @@ public extension UIColor {
      
      - returns: A UIColor from the given String.
      */
-    private class func colorWithHexThreeCharacters(hexColor: String) -> UIColor? {
+    fileprivate class func colorWithHexThreeCharacters(_ hexColor: String) -> UIColor? {
         
-        let redRange: Range = Range<String.Index>(start:  hexColor.startIndex.advancedBy(0), end: hexColor.startIndex.advancedBy(1))
-        let redString: String = String(format: "%@%@", hexColor.substringWithRange(redRange), hexColor.substringWithRange(redRange))
+        let redRange: Range = (hexColor.characters.index(hexColor.startIndex, offsetBy: 0) ..< hexColor.characters.index(hexColor.startIndex, offsetBy: 1))
+        let redString: String = String(format: "%@%@", hexColor.substring(with: redRange), hexColor.substring(with: redRange))
         
-        let greenRange: Range = Range<String.Index>(start:  hexColor.startIndex.advancedBy(1), end: hexColor.startIndex.advancedBy(2))
-        let greenString: String = String(format: "%@%@", hexColor.substringWithRange(greenRange), hexColor.substringWithRange(greenRange))
+        let greenRange: Range = (hexColor.characters.index(hexColor.startIndex, offsetBy: 1) ..< hexColor.characters.index(hexColor.startIndex, offsetBy: 2))
+        let greenString: String = String(format: "%@%@", hexColor.substring(with: greenRange), hexColor.substring(with: greenRange))
         
-        let blueRange: Range = Range<String.Index>(start:  hexColor.startIndex.advancedBy(2), end: hexColor.startIndex.advancedBy(3))
-        let blueString: String = String(format: "%@%@", hexColor.substringWithRange(blueRange), hexColor.substringWithRange(blueRange))
+        let blueRange: Range = (hexColor.characters.index(hexColor.startIndex, offsetBy: 2) ..< hexColor.characters.index(hexColor.startIndex, offsetBy: 3))
+        let blueString: String = String(format: "%@%@", hexColor.substring(with: blueRange), hexColor.substring(with: blueRange))
         
         let hex: String = String(format: "%@%@%@", redString, greenString, blueString)
         

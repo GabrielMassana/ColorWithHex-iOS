@@ -181,20 +181,20 @@ class ColorWithHexTests: XCTestCase {
         
         let redColor = UIColor.colorWithHex(red!)
         
-        XCTAssertEqual(redColor, UIColor.redColor(), "A red Color object wasn't created");
+        XCTAssertEqual(redColor, UIColor.red, "A red Color object wasn't created");
     }
     
     func test_colorWithHex_green() {
         
         let greenColor = UIColor.colorWithHex(green!)
         
-        XCTAssertEqual(greenColor, UIColor.greenColor(), "A green Color object wasn't created");
+        XCTAssertEqual(greenColor, UIColor.green, "A green Color object wasn't created");
     }
     
     func test_colorWithHex_blue() {
         
         let blueColor = UIColor.colorWithHex(blue!)
         
-        XCTAssertEqual(blueColor, UIColor.blueColor(), "A blue Color object wasn't created");
+        XCTAssertEqual(blueColor, UIColor.blue, "A blue Color object wasn't created");
     }
 }
