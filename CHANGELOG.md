@@ -1,3 +1,7 @@
+#### 3.0.0
+
+ - Added compatibility with Swift 3.x
+
 #### 2.0.0
 
  - Added method with prefix for Objective-C
@@ -14,5 +18,3 @@
   - Converts a hexadecimal value (rrggbbaa) in a UIColor Object
   - Converts a hexadecimal value (#rrggbb) in a UIColor Object
   - Converts a hexadecimal value (#rrggbbaa) into a UIColor Object
-
-
