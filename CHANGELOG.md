@@ -1,4 +1,4 @@
-#### 3.0.0
+#### 3.0.1
 
  - Added compatibility with Swift 3.x
 
