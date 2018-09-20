@@ -29,19 +29,19 @@ public extension UIColor {
         let noHash = hex.replacingOccurrences(of: "#", with: "")
         
         let start = noHash.startIndex
-        let hexColor = noHash.substring(from: start)
+        let hexColor = noHash[start...]
         
         if (hexColor.count == 8) {
             
-            color = colorWithHexAlpha(hexColor)
+            color = colorWithHexAlpha(String(hexColor))
         }
         else if (hexColor.count == 6)
         {
-           color = colorWithHexSixCharacters(hexColor)
+            color = colorWithHexSixCharacters(String(hexColor))
         }
         else if (hexColor.count == 3)
         {
-            color = colorWithHexThreeCharacters(hexColor)
+            color = colorWithHexThreeCharacters(String(hexColor))
         }
         
         return color
@@ -106,13 +106,13 @@ public extension UIColor {
     fileprivate class func colorWithHexThreeCharacters(_ hexColor: String) -> UIColor? {
         
         let redRange: Range = (hexColor.index(hexColor.startIndex, offsetBy: 0) ..< hexColor.index(hexColor.startIndex, offsetBy: 1))
-        let redString: String = String(format: "%@%@", hexColor.substring(with: redRange), hexColor.substring(with: redRange))
+        let redString: String = String(format: "%@%@", hexColor[ ..<redRange.upperBound] as CVarArg, hexColor[ ..<redRange.upperBound] as CVarArg)
         
         let greenRange: Range = (hexColor.index(hexColor.startIndex, offsetBy: 1) ..< hexColor.index(hexColor.startIndex, offsetBy: 2))
-        let greenString: String = String(format: "%@%@", hexColor.substring(with: greenRange), hexColor.substring(with: greenRange))
+        let greenString: String = String(format: "%@%@", hexColor[..<greenRange.upperBound] as CVarArg, hexColor[..<greenRange.upperBound] as CVarArg)
         
         let blueRange: Range = (hexColor.index(hexColor.startIndex, offsetBy: 2) ..< hexColor.index(hexColor.startIndex, offsetBy: 3))
-        let blueString: String = String(format: "%@%@", hexColor.substring(with: blueRange), hexColor.substring(with: blueRange))
+        let blueString: String = String(format: "%@%@", hexColor[..<blueRange.upperBound] as CVarArg, hexColor[..<blueRange.upperBound] as CVarArg)
         
         let hex: String = String(format: "%@%@%@", redString, greenString, blueString)
         
